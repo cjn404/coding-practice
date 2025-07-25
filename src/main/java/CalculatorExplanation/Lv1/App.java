@@ -7,21 +7,21 @@ public class App {
         Scanner sc = new Scanner(System.in);
 
         while (true) {
-            System.out.println("첫 번째 숫자를 입력하세요: ");
+            System.out.print("첫 번째 숫자를 입력하세요: ");
             int firstNumber = sc.nextInt();
             if (firstNumber < 0) {
                 System.out.println("음수는 입력할 수 없습니다. 프로그램을 재시작합니다.");
                 continue;
             }
 
-            System.out.println("두 번째 숫자를 입력하세요: ");
+            System.out.print("두 번째 숫자를 입력하세요: ");
             int secondNumber = sc.nextInt();
             if (secondNumber < 0) {
                 System.out.println("음수는 입력할 수 없습니다. 프로그램을 재시작합니다.");
                 continue;
             }
 
-            System.out.println("사칙연산 기호를 입력하세요 (+, -, *, /): ");
+            System.out.print("사칙연산 기호를 입력하세요 (+, -, *, /): ");
             char operator = sc.next().charAt(0);
 
             switch (operator) {
